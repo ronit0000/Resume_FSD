@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        body {
+            width: 400mm; /* Set width to 400mm */
+            height: auto; /* Set height to auto */
+            margin: 0 auto;
+            padding: 20mm; /* Optional: add padding */
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Times New Roman', Times, serif; /* Set font style */
+            font-size: 22px; /* Increase font size */
+        }
+        .content {
+            width: 100%;
+            height: 100%;
+            border: 8px solid black; /* Black bold border */
+            background-color: rgb(219, 219, 219); /* Add background color */
+            padding: 20mm; /* Optional: add padding */
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px; /* Space between image/name and other details */
+        }
+        .image img {
+            width: 200px; /* Increase the desired width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Slightly curve the edges */
+            margin-right: 20px; /* Space between image and details */
+        }
+        .details {
+            display: flex;
+            flex-direction: column;
+            margin-top: -27px;
+        }
+        .name {
+            font-size: 32px; /* Adjust font size as needed */
+            margin-bottom: 0; /* Remove bottom margin */
+            margin-bottom: -75px;
+        }
+        .university {
+            margin-top: -75; /* Remove top margin */
+            margin-bottom: -27px;
+        }
+        .contact {
+            display: flex;
+            justify-content: space-around;
+            width: 100%; /* Make the contact section span the full width */
+            background-color: rgb(121, 121, 240);
+            color: white;
+            margin-bottom: 40px; /* Space between sections */
+        }
+        .contact-item {
+            margin: 0 10px; /* Space between contact items */
+        }
+        .contact-item a {
+            color: white; /* Set email link color to white */
+        }
+        .education, .languages, .certificates, .skills {
+            align-self: flex-start; /* Align sections to the left */
+            margin-bottom: 20px; /* Space between sections */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="container">
+            <div class="image">
+                <img src="PHOTO.jpg" alt="My PHOTO">
+            </div>
+            <div class="details">
+                <div class="name"><h1>Ronit Kumar Sahu</h1></div>
+                <div class="university"><h2>Student At KL University</h2></div>
+                <div class="detail-item"><p>I am a motivated Computer Science student at KL University, Vijayawada, eager to apply my programming skills in software development and data management. Proficient in Java, Python, and C, with experience in SQL for database management, I seek to contribute to innovative projects. I am enthusiastic about gaining practical experience in a collaborative environment while expanding my knowledge in software development and data analysis.</p></div>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contact-item">
+                Phone: 9861517551
+            </div> 
+            <div class="contact-item">
+                Email: <a href="mailto:ronitkusahu@gmail.com">ronitkusahu@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                LinkedIn: <a href="https://www.linkedin.com/in/ronit-kumar-sahu-0032582a2?utm_source=share&utm_campaign=share_via&utm_content=profile">Ronit Kumar Sahu</a>
+            </div>
+            <div class="contact-item">
+                GitHub: <a href="https://github.com/ronit0000">ronit0000</a>
+            </div>
+        </div>
+        
+        <div class="education">
+            <h2>Education</h2>
+            <hr style="width: auto; height: 2px; background-color: black; margin-bottom: 20px; margin-top: -20px"> <!-- Add a horizontal line -->
+            <ul class="education-item">
+                <li><h3><b>KL University,Vijayawada,Andhra Pradesh (2023-2027): </b></h3>
+                    <p>- Bachelor of Technology in Computer Science and Engineering</p>
+                    <p>- With Honours Through Research</p>
+                    <p>- Minor in Business And Economics</p>
+                </li>
+                <li><h3><b>DAV Public School,Brahmapur,Odisha (2020-2022): </b></h3>
+                    <p>- Intermediate in Science Stream (MPC)</p>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="skills">
+            <h2>Skills</h2>
+            <hr style="width: auto; height: 2px; background-color: black; margin-bottom: 20px; margin-top: -20px"> <!-- Add a horizontal line -->
+            <ol class="skills-item">
+                <li>Python</li>
+                <li>Java</li>
+                <li>C</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>SAS</li>
+            </ol>
+        </div>
+       
+        <div class="languages">
+            <h2>Languages</h2>
+            <hr style="width: auto; height: 2px; background-color: black; margin-bottom: 20px; margin-top: -20px"> <!-- Add a horizontal line -->
+            <ol class="languages-item">
+                <li>English: Fluent</li>
+                <li>Hindi: Fluent</li>
+                <li>Odia: Fluent</li>
+            </ol>
+        </div>
+        
+        <div class="certificates">
+            <h2>Certificates</h2>
+            <hr style="width: auto; height: 2px; background-color: black; margin-bottom: 20px; margin-top: -20px"> <!-- Add a horizontal line -->
+            <ol class="certificates-item">
+                <li>LinguaSkill: Udemy</li>
+                <li>Cisco Virtual Networking Course: Cisco Networking Academy</li>
+                <li>Certified Associate Python Programmer (Exam PCAP-31-0x) : Pyhton Institute (Currently Preparing)</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

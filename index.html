@@ -37,7 +37,7 @@
         .image img {
             width: 200px; /* Increase the desired width */
             height: auto; /* Maintain aspect ratio */
-            border-radius: 10px; /* Slightly curve the edges */
+            border-radius: 10px; /* Slightly curv3 the edges */
             margin-right: 20px; /* Space between image and details */
         }
         .details {
@@ -67,15 +67,41 @@
         }
         .contact-item a {
             color: white; /* Set email link color to white */
+            font-weight: bold;
+            text-decoration: none;
         }
         .education, .languages, .certificates, .skills {
             align-self: flex-start; /* Align sections to the left */
             margin-bottom: 20px; /* Space between sections */
         }
+        .education-item a{
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px; /* Space between nav and content */
+            background-color: white;
+        }
+        nav a {
+            text-decoration: none; /* Remove underline */
+            color: black; /* Set color to black */
+            font-weight: bold; /* Set font weight to bold */
+        }
     </style>
 </head>
 <body>
     <div class="content">
+        <h1>My Resume Project</h1>
+        <nav>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#languages">Languages</a>
+            <a href="#certificates">Certificates</a>
+        </nav>
+        <hr style="height: 5px; background-color: black;">
         <div class="container">
             <div class="image">
                 <img src="PHOTO.jpg" alt="My PHOTO">
@@ -91,32 +117,32 @@
                 Phone: 9861517551
             </div> 
             <div class="contact-item">
-                Email: <a href="mailto:ronitkusahu@gmail.com">ronitkusahu@gmail.com</a>
+                Email: <a href="mailto:ronitkusahu@gmail.com" target="_blank">ronitkusahu@gmail.com</a>
             </div>
             <div class="contact-item">
-                LinkedIn: <a href="https://www.linkedin.com/in/ronit-kumar-sahu-0032582a2?utm_source=share&utm_campaign=share_via&utm_content=profile">Ronit Kumar Sahu</a>
+                LinkedIn: <a href="https://www.linkedin.com/in/ronit-kumar-sahu-0032582a2?utm_source=share&utm_campaign=share_via&utm_content=profile" target="_blank">Ronit Kumar Sahu</a>
             </div>
             <div class="contact-item">
-                GitHub: <a href="https://github.com/ronit0000">ronit0000</a>
+                GitHub: <a href="https://github.com/ronit0000" target="_blank">ronit0000</a>
             </div>
         </div>
         
-        <div class="education">
+        <div id="education" class="education">
             <h2>Education</h2>
             <hr style="width: auto; height: 2px; background-color: black; margin-bottom: 20px; margin-top: -20px"> <!-- Add a horizontal line -->
             <ul class="education-item">
-                <li><h3><b>KL University,Vijayawada,Andhra Pradesh (2023-2027): </b></h3>
+                <li><h3><b><a href="https://maps.app.goo.gl/TxkQDzq8uJHJuSY99" target="_blank">KL University,Vijayawada,Andhra Pradesh</a> (2023-2027): </b></h3>
                     <p>- Bachelor of Technology in Computer Science and Engineering</p>
                     <p>- With Honours Through Research</p>
                     <p>- Minor in Business And Economics</p>
                 </li>
-                <li><h3><b>DAV Public School,Brahmapur,Odisha (2020-2022): </b></h3>
+                <li><h3><b><a href="https://maps.app.goo.gl/7woAKXrYrH3muiyw8" target="_blank">DAV Public School,Brahmapur,Odisha</a> (2020-2022): </b></h3>
                     <p>- Intermediate in Science Stream (MPC)</p>
                 </li>
             </ul>
         </div>
         
-        <div class="skills">
+        <div class="skills" id="skills">
             <h2>Skills</h2>
             <hr style="width: auto; height: 2px; background-color: black; margin-bottom: 20px; margin-top: -20px"> <!-- Add a horizontal line -->
             <ol class="skills-item">
@@ -129,7 +155,7 @@
             </ol>
         </div>
        
-        <div class="languages">
+        <div class="languages" id="languages">
             <h2>Languages</h2>
             <hr style="width: auto; height: 2px; background-color: black; margin-bottom: 20px; margin-top: -20px"> <!-- Add a horizontal line -->
             <ol class="languages-item">
@@ -139,7 +165,7 @@
             </ol>
         </div>
         
-        <div class="certificates">
+        <div class="certificates" id="certificates">
             <h2>Certificates</h2>
             <hr style="width: auto; height: 2px; background-color: black; margin-bottom: 20px; margin-top: -20px"> <!-- Add a horizontal line -->
             <ol class="certificates-item">
